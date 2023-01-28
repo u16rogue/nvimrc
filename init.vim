@@ -42,6 +42,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'evanleck/vim-svelte'
 Plug 'jparise/vim-graphql'
 Plug 'tpope/vim-ragtag'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Integration Development
 "Plug 'cdelledonne/vim-cmake'
@@ -85,19 +86,19 @@ nnoremap <silent>    <F1> <Cmd>NvimTreeToggle<CR>
 "let g:cmake_build_options = ['Debug', 'Release', 'RelWithDebInfo', 'MinSizeRel']
 
 " Indent highlight
-lua vim.opt.termguicolors = true
-lua vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
-lua vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine]]
-lua vim.cmd [[highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine]]
-lua vim.cmd [[highlight IndentBlanklineIndent4 guifg=#56B6C2 gui=nocombine]]
-lua vim.cmd [[highlight IndentBlanklineIndent5 guifg=#61AFEF gui=nocombine]]
-lua vim.cmd [[highlight IndentBlanklineIndent6 guifg=#C678DD gui=nocombine]]
+"lua vim.opt.termguicolors = true
+"lua vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
+"lua vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine]]
+"lua vim.cmd [[highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine]]
+"lua vim.cmd [[highlight IndentBlanklineIndent4 guifg=#56B6C2 gui=nocombine]]
+"lua vim.cmd [[highlight IndentBlanklineIndent5 guifg=#61AFEF gui=nocombine]]
+"lua vim.cmd [[highlight IndentBlanklineIndent6 guifg=#C678DD gui=nocombine]]
 
 lua vim.opt.list = true
 lua vim.opt.listchars:append "space:⋅"
 lua vim.opt.listchars:append "eol:↴"
 
-lua require("indent_blankline").setup { space_char_blankline = " ", char_highlight_list = {"IndentBlanklineIndent1","IndentBlanklineIndent2","IndentBlanklineIndent3","IndentBlanklineIndent4","IndentBlanklineIndent5","IndentBlanklineIndent6", },}
+" lua require("indent_blankline").setup { char = "│", space_char_blankline = " ", char_highlight_list = {"IndentBlanklineIndent1","IndentBlanklineIndent2","IndentBlanklineIndent3","IndentBlanklineIndent4","IndentBlanklineIndent5","IndentBlanklineIndent6", },}
 
 " Tabs
 nnoremap <silent>    <A-z> <Cmd>BufferPrevious<CR>
