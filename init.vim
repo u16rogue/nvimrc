@@ -35,6 +35,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'romgrk/barbar.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'nvim-treesitter/nvim-treesitter-context'
 
 " Language
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
