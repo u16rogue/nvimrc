@@ -14,6 +14,8 @@ set showmatch
 set termguicolors
 set linebreak
 
+set guifont="CaskaydiaCove NF Mono":20
+
 call plug#begin('~/AppData/Local/nvim/plugged')
 
 " Icons
@@ -43,6 +45,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'evanleck/vim-svelte'
 Plug 'jparise/vim-graphql'
 Plug 'tpope/vim-ragtag'
+Plug 'ziglang/zig.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Integration Development
