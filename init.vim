@@ -123,3 +123,6 @@ nnoremap <silent>    <A-v> <c-v>
 
 " Recolor line numbers
 highlight LineNr guifg=#fff
+
+" Zig
+let g:zig_fmt_autosave = 0
